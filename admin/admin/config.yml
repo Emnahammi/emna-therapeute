@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: Emnahammi/emna-therapeute
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "contenu"
+    label: "Contenu du site"
+    files:
+      - label: "Textes principaux"
+        name: "index"
+        file: "_data/contenu.json"
+        fields:
+          - { label: "Titre principal", name: "hero_title", widget: "string" }
+          - { label: "Sous-titre", name: "hero_subtitle", widget: "string" }
+          - { label: "Description", name: "hero_desc", widget: "text" }
+          - { label: "Téléphone", name: "telephone", widget: "string" }
+          - { label: "Courriel", name: "courriel", widget: "string" }
